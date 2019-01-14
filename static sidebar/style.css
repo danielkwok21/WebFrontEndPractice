@@ -1,0 +1,27 @@
+.wrapper{
+	display: flex;	/*positions itemss in a div evenly, responsively*/
+	align-items: stretch;	/*equalize height of page content and sidebar*/
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;	/*vh = viewport height*/
+}
+
+#sidebar.active{
+	margin-left: -250px;
+}
+
+/*[] are for attributes*/
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
